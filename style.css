@@ -1,0 +1,209 @@
+/* Pengaturan Dasar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f5;
+}
+
+/* Navbar */
+.navbar-majene {
+  background-color: #243b35;
+  padding: 15px 0;
+}
+
+.navbar-majene .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-majene .navbar-brand,
+.navbar-majene .navbar-menu .nav-link {
+  color: white;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* Efek Kursor Navbar */
+.navbar-majene .navbar-menu .nav-link:hover {
+  color: #f3bd1a;
+}
+
+/* Menu yang Sedang Dibuka */
+.navbar-majene .navbar-menu .nav-link.active {
+  color: #f3bd1a;
+  font-weight: bold;
+}
+
+/* Beranda */
+.hero-majene {
+  position: relative;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.foto-beranda,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.foto-beranda {
+  object-fit: cover;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* Judul */
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+/* Kotak Wisata */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(36, 59, 53, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #243b35;
+  font-weight: bold;
+}
+
+/* Tombol */
+.btn {
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #52796f;
+  color: white;
+  box-shadow: 0 5px 10px rgba(36, 59, 53, 0.3);
+}
+
+/* Halaman Login */
+.halaman-login {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.kartu-login {
+  width: 100%;
+  max-width: 480px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(36, 59, 53, 0.2);
+}
+
+.judul-login {
+  background-color: #243b35;
+  color: white;
+  padding: 20px;
+}
+
+.tombol-login {
+  background-color: #243b35;
+  color: white;
+}
+
+.tombol-login:hover {
+  background-color: #52796f;
+  color: white;
+}
+
+.tautan-beranda {
+  color: #243b35;
+}
+
+/* Detail Wisata */
+#daftar-wisata {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Halaman Tentang */
+.halaman-tentang {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Footer */
+.footer-majene {
+  background-color: #243b35;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+  .navbar-majene .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-majene {
+    min-height: 450px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .kartu-login {
+    max-width: 100%;
+  }
+}
